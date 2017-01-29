@@ -31,13 +31,14 @@
   padding: 0; }
 
 .jumbotron-overlay {
-  background: -moz-linear-gradient(top, rgba(232, 129, 130, 0.75) 0%, rgba(238, 216, 137, 0.75) 100%);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f38181+0,fbe389+100&0.9+0,0.9+100 */
+  background: -moz-linear-gradient(top, rgba(243, 129, 129, 0.9) 0%, rgba(251, 227, 137, 0.9) 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(232, 129, 130, 0.75) 0%, rgba(238, 216, 137, 0.75) 100%);
+  background: -webkit-linear-gradient(top, rgba(243, 129, 129, 0.9) 0%, rgba(251, 227, 137, 0.9) 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(232, 129, 130, 0.75) 0%, rgba(238, 216, 137, 0.75) 100%);
+  background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9) 0%, rgba(251, 227, 137, 0.9) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfe88182', endColorstr='#bfeed889',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6f38181', endColorstr='#e6fbe389',GradientType=0 );
   /* IE6-9 */
   width: 100%;
   height: 100%;
@@ -64,23 +65,168 @@
     font-family: "Montserrat";
     color: #fff;
     margin: 0 0 -10vh 0; }
-  .jumbotron-overlay h5 {
+  .jumbotron-overlay h4 {
     color: #fff;
     border-top: solid 3px #fff; }
-    .jumbotron-overlay h5:hover {
-      color: #fce38a;
+    .jumbotron-overlay h4:hover {
+      color: #fff;
       border-top-color: #f38181; }
-      .jumbotron-overlay h5:hover small {
-        color: #fce38a; }
-    .jumbotron-overlay h5 small {
+      .jumbotron-overlay h4:hover small {
+        color: #fff; }
+    .jumbotron-overlay h4 small {
       color: #fff; }
   .jumbotron-overlay a:hover {
     text-decoration: none; }
+  .jumbotron-overlay hr {
+    border-color: #fff; }
 
 hr {
   width: 100px;
   border: solid 2px;
-  color: #fff;
+  border-color: #f38181;
   margin-top: 10vh; }
+
+.container > h4 {
+  font-family: "Kaushan Script"; }
+
+.container > h3 {
+  font-family: "Montserrat"; }
+
+.container hr {
+  margin: 3vh auto; }
+
+.container p {
+  font-family: "Roboto";
+  color: #999;
+  margin-bottom: 7vh; }
+
+.numbers {
+  background-color: #95e1d3;
+  margin: 10vh auto;
+  display: flex;
+  align-items: center; }
+  .numbers h1, .numbers p {
+    color: #fff; }
+  .numbers h1 {
+    margin-top: 5vh;
+    font-weight: 700; }
+  .numbers p {
+    font-size: 0.7em;
+    margin-bottom: 5vh; }
+
+.services hr {
+  margin: 5vh auto; }
+
+.services .glyphicon {
+  color: #95e1d3;
+  font-size: 1.5em; }
+
+.mockups {
+  background-image: url(https://images.unsplash.com/photo-1464241353125-b30586718640);
+  background-position: center;
+  padding: 0; }
+
+.mockups-overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8); }
+  .mockups-overlay > h4 {
+    font-family: "Kaushan Script"; }
+  .mockups-overlay > h3 {
+    font-family: "Montserrat"; }
+  .mockups-overlay hr {
+    margin: 3vh auto; }
+
+#opinions1 .fa {
+  color: #95e1d3;
+  font-size: 5em;
+  padding: 3vh;
+  border: solid 2px #95e1d3;
+  margin-right: 3vh; }
+
+#opinions1 h5 {
+  font-family: "Kaushan Script"; }
+
+#opinions1 p {
+  margin-bottom: 2vh; }
+
+#opinions1 hr {
+  border: solid 1px #f38181;
+  margin: 0 1vh 0 0;
+  margin-top: 6px;
+  width: 40px; }
+
+.team {
+  margin-bottom: 8vh; }
+  .team h6 {
+    color: #999; }
+
+.gallery {
+  margin-bottom: 5vh; }
+
+#opinions2 {
+  margin-bottom: 5vh; }
+  #opinions2 p {
+    margin-bottom: 2vh; }
+  #opinions2 hr {
+    border: solid 1px #f38181;
+    margin: 0 1vh 0 0;
+    margin-top: 6px;
+    width: 40px; }
+  #opinions2 h5 {
+    font-family: "Kaushan Script"; }
+
+#opinions3 {
+  padding: 0;
+  background-image: url(https://images.unsplash.com/photo-1444310689954-f041cfbe29f2);
+  background-position: center; }
+
+.opinions3-overlay {
+  padding-top: 10vh;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7); }
+  .opinions3-overlay > h4 {
+    font-family: "Kaushan Script"; }
+  .opinions3-overlay > h3 {
+    font-family: "Montserrat"; }
+  .opinions3-overlay hr {
+    margin: 5vh auto 10vh; }
+  .opinions3-overlay div p {
+    font-size: 1.2em;
+    margin-bottom: 5vh; }
+  .opinions3-overlay div hr {
+    margin: 2vh auto 2vh 0;
+    width: 60px;
+    border: solid 1px #f38181; }
+  .opinions3-overlay div h6 {
+    color: #999; }
+
+.blog {
+  margin-bottom: 5vh; }
+  .blog div hr {
+    border: solid 1px #eee;
+    width: 100%;
+    margin: 1vh auto; }
+  .blog div p {
+    margin-bottom: 1vh; }
+  .blog .glyphicon {
+    color: #95e1d3; }
+
+.map {
+  padding: 0;
+  background-image: url(https://images.unsplash.com/photo-1444310689954-f041cfbe29f2);
+  background-position: center; }
+
+.map-overlay {
+  padding-top: 3vh;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); }
+  .map-overlay .glyphicon {
+    font-size: 2em;
+    color: #f38181; }
+  .map-overlay h3 {
+    color: #f38181; }
 
 /*# sourceMappingURL=style.css.map */
