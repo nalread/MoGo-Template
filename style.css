@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat|Roboto");
+body {
+  position: relative; }
+
 .navbar {
-  position: absolute;
-  width: 100%;
   border: none;
-  background-color: transparent;
-  margin-bottom: 0;
-  display: flex;
-  justify-content: center; }
+  background-color: rgba(243, 129, 129, 0.5); }
 
 .navbar-default .navbar-brand {
   font-family: "Montserrat";
@@ -74,7 +72,8 @@
     margin: 0 0 -10vh 0; }
   .jumbotron-overlay h4 {
     color: #fff;
-    border-top: solid 3px #fff; }
+    border-top: solid 3px #fff;
+    line-height: 3em; }
     .jumbotron-overlay h4:hover {
       color: #fff;
       border-top-color: #f38181; }
