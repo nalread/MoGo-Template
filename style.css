@@ -4,7 +4,7 @@ body {
 
 .navbar {
   border: none;
-  background-color: rgba(243, 129, 129, 0.5); }
+  background-color: rgba(243, 129, 129, 0.6); }
 
 .navbar-default .navbar-brand {
   font-family: "Montserrat";
@@ -13,9 +13,11 @@ body {
   font-size: 1.7em; }
   .navbar-default .navbar-brand:hover {
     color: #fce38a; }
+  .navbar-default .navbar-brand:focus {
+    color: #fff; }
 
 .navbar-default .navbar-nav .active a {
-  background-color: inherit;
+  background-color: transparent;
   color: #fce38a;
   border-bottom: solid 3px #fce38a; }
   .navbar-default .navbar-nav .active a:hover {
@@ -38,13 +40,9 @@ body {
 .jumbotron-overlay {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f38181+0,fbe389+100&0.9+0,0.9+100 */
   background: -moz-linear-gradient(top, rgba(243, 129, 129, 0.9) 0%, rgba(251, 227, 137, 0.9) 100%);
-  /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgba(243, 129, 129, 0.9) 0%, rgba(251, 227, 137, 0.9) 100%);
-  /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9) 0%, rgba(251, 227, 137, 0.9) 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6f38181', endColorstr='#e6fbe389',GradientType=0 );
-  /* IE6-9 */
   width: 100%;
   height: 100%;
   display: flex;
@@ -57,7 +55,7 @@ body {
     color: #fff;
     border-radius: 0px;
     border: solid 3px #fff; }
-    .jumbotron-overlay button:hover {
+    .jumbotron-overlay button:hover, .jumbotron-overlay button:focus, .jumbotron-overlay button:active, .jumbotron-overlay button:active:focus {
       border: solid 3px #fce38a;
       background-color: transparent;
       border-radius: 0;
@@ -106,8 +104,12 @@ hr {
   color: #999;
   margin-bottom: 7vh; }
 
-.story {
+#about {
   margin: 1vh auto; }
+  #about img:hover {
+    transition: 0.5s;
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px #95e1d3; }
 
 .numbers {
   background-color: #95e1d3;
@@ -127,10 +129,10 @@ hr {
     font-size: 0.7em;
     margin-bottom: 5vh; }
 
-.services hr {
+#services hr {
   margin: 5vh auto; }
 
-.services .glyphicon {
+#services .glyphicon {
   color: #95e1d3;
   font-size: 1.5em; }
 
@@ -156,6 +158,23 @@ hr {
 
 .service {
   padding-bottom: 5vh; }
+  .service span {
+    margin-right: 10px;
+    color: #95e1d3;
+    font-size: 1.5em; }
+  .service a {
+    font-family: "Montserrat";
+    font-size: 0.8em; }
+  .service .panel-body {
+    font-family: "Roboto";
+    font-size: 1em;
+    color: #aaa;
+    height: 25vh;
+    overflow-y: scroll; }
+    .service .panel-body::-webkit-scrollbar {
+      width: 3px; }
+    .service .panel-body::-webkit-scrollbar-thumb {
+      background-color: #95e1d3; }
 
 #opinions1 .fa {
   color: #95e1d3;
@@ -176,6 +195,9 @@ hr {
   margin-top: 6px;
   width: 40px; }
 
+#opinions1 .carousel-control {
+  background: none; }
+
 .team {
   margin-bottom: 8vh; }
   .team h6 {
@@ -195,6 +217,8 @@ hr {
     width: 40px; }
   #opinions2 h5 {
     font-family: "Kaushan Script"; }
+  #opinions2 .carousel-control {
+    background: none; }
 
 #opinions3 {
   padding: 0;
@@ -221,16 +245,19 @@ hr {
     border: solid 1px #f38181; }
   .opinions3-overlay div h6 {
     color: #999; }
+  .opinions3-overlay img {
+    max-width: 100px;
+    max-height: 100px; }
 
-.blog {
+#blog {
   margin-bottom: 5vh; }
-  .blog div hr {
+  #blog div hr {
     border: solid 1px #eee;
     width: 100%;
     margin: 1vh auto; }
-  .blog div p {
+  #blog div p {
     margin-bottom: 1vh; }
-  .blog .glyphicon {
+  #blog .glyphicon {
     color: #95e1d3; }
 
 .map {
@@ -249,34 +276,34 @@ hr {
   .map-overlay h3 {
     color: #f38181; }
 
-.contact h2 {
+#contact h2 {
   font-family: "Montserrat";
   color: #ccc;
   font-weight: 700; }
 
-.contact .fa {
+#contact .fa {
   color: #95e1d3; }
 
-.contact h4, .contact small {
+#contact h4, #contact small {
   font-weight: 700; }
 
-.contact hr {
+#contact hr {
   border-width: 1px;
   border-color: #eee;
   width: 100%; }
 
-.contact button {
+#contact button {
   border-radius: 0;
   border: none;
   background-color: #95e1d3;
   font-weight: 700;
   color: #fff; }
 
-.contact input {
+#contact input {
   border: 1px solid #eee;
   border-radius: 0; }
 
-.contact p {
+#contact p {
   margin-bottom: 3vh; }
 
 .blogs h4 {
@@ -292,12 +319,15 @@ hr {
 .blogs p {
   font-size: 0.8em; }
 
+.blogs img {
+  max-width: 10vw; }
+
 .instagrams div {
   padding: 1px;
   margin: 0; }
 
 .instagrams .img-responsive {
-  width: 100%;
+  width: 200px;
   height: auto; }
 
 footer hr {

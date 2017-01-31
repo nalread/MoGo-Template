@@ -4,11 +4,13 @@
 		<meta charset="utf-8">
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="scripts.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<title>Mah Page</title>
 	</head>
-	<body>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 		<!-- //TODO /xfixed navbarx/, /xchange color on movex/, spyscroll, smoothscroll -->
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
@@ -22,11 +24,11 @@
 				</div>
 				<div class="collapse navbar-collapse" id="mogo-navbar-collapse">
 					<ul class="nav navbar-nav navbar-right text-uppercase">
-						<li class="active"><a href="#">About</a></li>
-						<li><a href="#">Service</a></li>
-						<li><a href="#">Work</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contact</a></li>
+						<li class="active"><a href="#about">About</a></li>
+						<li><a class="js-scroll-to-service" href="#service">Service</a></li>
+						<li><a href="#work">Work</a></li>
+						<li><a href="#blog">Blog</a></li>
+						<li><a href="#contact">Contact</a></li>
 						<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
 						<li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
 					</ul>
@@ -58,14 +60,14 @@
 				</div>
 			</div>
 		</div>
-		<div class="container text-center story">
+		<div class="container text-center" id="about">
 			<h4><i>What we do</i></h4>
 			<h3 class="text-uppercase">Story about us</h3>
-			<hr>
+			<!-- <hr> -->
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 			</p>
-			<!-- //TODO add hover: gradient, translate, icon, shadow -->
+			<!-- //TODO add hover: gradient, /xtranslatex/, icon, /xshadowx/ -->
 			<div class="col-xs-4">
 				<img class="img-responsive" src="http://photo.foter.com/photos/m/394/woman-working-on-laptop-with-notebook-and-mobile-phone-on-table.jpg">
 			</div>
@@ -98,7 +100,7 @@
 				<p class="text-uppercase">Members</p>
 			</div>
 		</div>
-		<div class="container text-center services">
+		<div class="container text-center" id="services">
 			<h4><i>We work with</i></h4>
 			<h3 class="text-uppercase">Amazing Services</h3>
 			<hr>
@@ -187,7 +189,7 @@
 				<img class="img-responsive" src="http://i67.tinypic.com/2j4vw5h.png">
 			</div>
 		</div>
-		<div class="container text-center">
+		<div class="container text-center" id="service">
 			<h4><i>Service</i></h4>
 			<h3 class="text-uppercase">What we do</h3>
 			<hr>
@@ -198,35 +200,114 @@
 		</div>
 		<div class="container service">
 			<div class="col-xs-6">
-				<!-- //TODO: change image -->
-				<img class="img-responsive" src="http://lorempixel.com/450/300">
+				<!-- //TODO: /xchange imagex/ -->
+				<img class="img-responsive" src="http://photo.foter.com/photos/m/54/focused-5.jpg">
 			</div>
 			<div class="col-xs-6">
-				<!-- //TODO: accordion -->
-				<p>Accordion Here</p>
+				<!-- //TODO: /xaccordionx/ -->
+				<div class="panel-group" id="accordion" role="tablist">
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingOne">
+				      <h4 class="panel-title">
+				        <a class="text-uppercase" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+				          <span class="glyphicon glyphicon-picture"></span>Photography
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel">
+				      <div class="panel-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingTwo">
+				      <h4 class="panel-title">
+				        <a class="collapsed text-uppercase" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+				          <span class="fa fa-sliders"></span> Creativity
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel">
+				      <div class="panel-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingThree">
+				      <h4 class="panel-title">
+				        <a class="collapsed text-uppercase" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+				          <span class="glyphicon glyphicon-record"></span> Web design
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel">
+				      <div class="panel-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				      </div>
+				    </div>
+				  </div>
+				</div>
 			</div>
 		</div>
 		<div class="jumbotron" id="opinions1">
 			<!-- //TODO: carousel -->
-			<div class="media container">
-				<div class="media-left">
-					<span class="fa fa-comments media-object"></span>
-				</div>
-				<div class="media-body">
-					<p>
-						<i>
-							<small>
-								"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat."
-							</small>
-						</i>
-					</p>
-					<hr class="pull-left">
-					<h5 class="pull-left media-heading"><i>Jon Doe</i></h5>
+			<div id="carousel1" class="carousel slide" data-ride="carousel">
+			<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active container">
+						<div class="media">
+							<div class="media-left">
+								<i class="fa fa-comments"></i>
+							</div>
+							<div class="media-body">
+								<p>
+									<i>
+										<small>
+											"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat."
+										</small>
+									</i>
+								</p>
+								<hr class="pull-left">
+								<h5 class="media-heading pull-left"><i>Joshua Earle</i></h5>
+							</div>
+						</div>
+					</div> <!-- /item -->
+				<div class="item container">
+					<div class="media">
+						<div class="media-left">
+							<i class="fa fa-comments"></i>
+						</div>
+						<div class="media-body">
+							<p>
+								<i>
+									<small>
+										"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat."
+									</small>
+								</i>
+							</p>
+							<hr class="pull-left">
+							<h5 class="media-heading pull-left"><i>Joshua Earle</i></h5>
+						</div>
+					</div>
 				</div>
 			</div>
+			
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#carousel1" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
 		</div>		<!-- </jumbotron> -->
 		<div class="container text-center team">
 		<!-- //TODO add hover: gradient, translate, icon, shadow -->
@@ -274,7 +355,7 @@
 				<img class="img-responsive" src="http://i68.tinypic.com/2uhtg5h.png">
 			</div>
 		</div>
-		<div class="container text-center">
+		<div class="container text-center" id="work">
 			<h4><i>What we do</i></h4>
 			<h3 class="text-uppercase">Some of our work</h3>
 			<hr>
@@ -316,31 +397,66 @@
 				</div>
 			</div>
 		</div>
-		<div class="container" id="opinions2">
-			<!-- //TODO: add carousel -->
-			<div class="media">
-				<div class="media-left">
-					<img class="img-circle media-object" src="http://lorempixel.com/100/100">
-				</div>
-				<div class="media-body">
-					<p>
-						<i>
-							<small>
-								"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat."
-							</small>
-						</i>
-					</p>
-					<hr class="pull-left">
-					<h5 class="media-heading pull-left"><i>Joshua Earle</i></h5>
+		<div id="opinions2">
+			<div id="carousel2" class="carousel slide" data-ride="carousel">
+			<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active container">
+						<div class="media">
+							<div class="media-left">
+								<img class="img-circle media-object" src="http://lorempixel.com/100/100">
+							</div>
+							<div class="media-body">
+								<p>
+									<i>
+										<small>
+											"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat."
+										</small>
+									</i>
+								</p>
+								<hr class="pull-left">
+								<h5 class="media-heading pull-left"><i>Joshua Earle</i></h5>
+							</div>
+						</div>
+					</div> <!-- /item -->
+				<div class="item container">
+					<div class="media">
+						<div class="media-left">
+							<img class="img-circle media-object" src="http://lorempixel.com/100/100">
+						</div>
+						<div class="media-body">
+							<p>
+								<i>
+									<small>
+										"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat."
+									</small>
+								</i>
+							</p>
+							<hr class="pull-left">
+							<h5 class="media-heading pull-left"><i>Joshua Earle</i></h5>
+						</div>
+					</div>
 				</div>
 			</div>
+			
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel2" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#carousel2" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
 		</div>
 		<div class="jumbotron container-fluid text-center" id="opinions3">
 			<div class="opinions3-overlay">
-				<!-- //TODO: change 'client' pictures -->
+				<!-- //TODO: /xchange 'client' picturesx/ -->
 				<h4><i>Happy Clients</i></h4>
 				<h3 class="text-uppercase">What people say</h3>
 				<hr>
@@ -348,7 +464,7 @@
 					<div class="col-xs-4 col-xs-offset-2">
 						<div class="media">
 							<div class="media-left">
-								<img class="img-circle media-object" src="http://lorempixel.com/75/75">
+								<img class="img-circle media-object" src="http://photo.foter.com/photos/m/398/philippe-5.jpg">
 							</div>
 							<div class="media-body text-left">
 								<h5 class="media-heading text-uppercase">Matthew Dix</h5>
@@ -366,7 +482,7 @@
 					<div class="col-xs-4">
 						<div class="media">
 							<div class="media-left">
-								<img class="img-circle media-object" src="http://lorempixel.com/75/75">
+								<img class="img-circle media-object" src="http://photo.foter.com/photos/m/398/hello-old-friend.jpg">
 							</div>
 							<div class="media-body text-left">
 								<h5 class="media-heading text-uppercase">Nick Karvounis</h5>
@@ -386,7 +502,7 @@
 					<div class="col-xs-4 col-xs-offset-2">
 						<div class="media">
 							<div class="media-left">
-								<img class="img-circle media-object" src="http://lorempixel.com/75/75">
+								<img class="img-circle media-object" src="http://photo.foter.com/photos/m/398/christian-medell-n-medell-ncity-igerscolombia-retrato-instamedell-n.jpg">
 							</div>
 							<div class="media-body text-left">
 								<h5 class="media-heading text-uppercase">Jaelynn Castillo</h5>
@@ -404,7 +520,7 @@
 					<div class="col-xs-4">
 						<div class="media">
 							<div class="media-left">
-								<img class="img-circle media-object" src="http://lorempixel.com/75/75">
+								<img class="img-circle media-object" src="http://photo.foter.com/photos/m/398/mi-ltima-sesi-n-fotogr-fica.jpg">
 							</div>
 							<div class="media-body text-left">
 								<h5 class="media-heading text-uppercase">Mike Petrucci</h5>
@@ -422,13 +538,13 @@
 				</div>
 			</div>
 		</div>
-		<div class="container text-center blog">
-			<!-- //TODO: add label in lower left corner of images, change images, mixup statistics -->
+		<div class="container text-center" id="blog">
+			<!-- //TODO: add label in lower left corner of images, /xchange imagesx/, /xmixup statisticsx/ -->
 			<h4><i>Our stories</i></h4>
 			<h3 class="text-uppercase">Latest blog</h3>
 			<hr>
 			<div class="col-xs-4 text-left">
-				<img class="img-responsive" src="http://lorempixel.com/300/200">
+				<img class="img-responsive" src="http://photo.foter.com/photos/m/394/young-woman-in-eyeglasses-working-on-laptop.jpg">
 				<h6 class="text-uppercase">Lorem ipsum dolor sit amet</h6>
 				<p>
 					Ut enim ad minim veniam,
@@ -439,7 +555,7 @@
 				<span class="glyphicon glyphicon-eye-open"></span><span> 542 </span><span class="glyphicon glyphicon-comment"></span> 17
 			</div>
 			<div class="col-xs-4 text-left">
-				<img class="img-responsive" src="http://lorempixel.com/300/200">
+				<img class="img-responsive" src="http://photo.foter.com/photos/m/394/coffee-percolator-mobile-phone-and-laptop-on-table.jpg">
 				<h6 class="text-uppercase">Lorem ipsum dolor sit amet</h6>
 				<p>
 					Ut enim ad minim veniam,
@@ -447,10 +563,10 @@
 					consequat.
 				</p>
 				<hr>
-				<span class="glyphicon glyphicon-eye-open"></span><span> 542 </span><span class="glyphicon glyphicon-comment"></span><span> 17</span>
+				<span class="glyphicon glyphicon-eye-open"></span><span> 338 </span><span class="glyphicon glyphicon-comment"></span><span> 9</span>
 			</div>
 			<div class="col-xs-4 text-left">
-				<img class="img-responsive" src="http://lorempixel.com/300/200">
+				<img class="img-responsive" src="http://photo.foter.com/photos/m/224/nec-conference-35.jpg">
 				<h6 class="text-uppercase">Lorem ipsum dolor sit amet</h6>
 				<p>
 					Ut enim ad minim veniam,
@@ -458,7 +574,7 @@
 					consequat.
 				</p>
 				<hr>
-				<span class="glyphicon glyphicon-eye-open"></span><span> 542 </span><span class="glyphicon glyphicon-comment"></span><span> 17</span>
+				<span class="glyphicon glyphicon-eye-open"></span><span> 666 </span><span class="glyphicon glyphicon-comment"></span><span> 69</span>
 			</div>
 		</div>
 		<div class="jumbotron map">
@@ -468,7 +584,7 @@
 				<hr>
 			</div>
 		</div>
-		<div class="container contact">
+		<div class="container" id="contact">
 			<div class="col-xs-4">
 				<h2>MoGo</h2>
 				<p>
@@ -488,11 +604,11 @@
 				</form>
 			</div>
 			<div class="col-xs-4 blogs">
-				<!-- //TODO: change pictures -->
+				<!-- //TODO: /xchange picturesx/ -->
 				<h4 class="text-uppercase">Blogs</h4>
 				<div class="media">
 					<div class="media-left">
-						<img class="media-object" src="http://lorempixel.com/120/75">
+						<img class="media-object" src="http://photo.foter.com/photos/m/398/random-abandonment.jpg">
 					</div>
 					<div class="media-body">
 						<h5 class="media-heading text-uppercase">
@@ -503,7 +619,7 @@
 				</div>
 				<div class="media">
 					<div class="media-left">
-						<img class="media-object" src="http://lorempixel.com/120/75">
+						<img class="media-object" src="http://photo.foter.com/photos/m/398/random-placement.jpg">
 					</div>
 					<div class="media-body">
 						<h5 class="media-heading text-uppercase">
@@ -514,7 +630,7 @@
 				</div>
 				<div class="media">
 					<div class="media-left">
-						<img class="media-object" src="http://lorempixel.com/120/75">
+						<img class="media-object" src="http://photo.foter.com/photos/m/398/random-4.jpg">
 					</div>
 					<div class="media-body">
 						<h5 class="media-heading text-uppercase">
@@ -526,38 +642,38 @@
 			</div>
 			<div class="col-xs-4 instagrams">
 				<h4 class="text-uppercase">Instagram</h4>
-				<!-- //TODO: change pictures -->
+				<!-- //TODO: /xchange picturesx/ -->
 				<div class="row">
 					<div class="col-xs-4">
-						<img class="img-responsive" src="http://lorempixel.com/100/100">
+						<img class="img-responsive" src="http://lorempixel.com/100/100/abstract/1">
 					</div>
 					<div class="col-xs-4">
-						<img class="img-responsive" src="http://lorempixel.com/100/100">
+						<img class="img-responsive" src="http://lorempixel.com/100/100/abstract/2">
 					</div>
 					<div class="col-xs-4">
-						<img class="img-responsive" src="http://lorempixel.com/100/100">
+						<img class="img-responsive" src="http://lorempixel.com/100/100/abstract/3">
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-xs-4">
-						<img class="img-responsive" src="http://lorempixel.com/100/100">
+						<img class="img-responsive" src="http://lorempixel.com/100/100/people/1">
 					</div>
 					<div class="col-xs-4">
-						<img class="img-responsive" src="http://lorempixel.com/100/100">
+						<img class="img-responsive" src="http://lorempixel.com/100/100/people/2">
 					</div>
 					<div class="col-xs-4">
-						<img class="img-responsive" src="http://lorempixel.com/100/100">
+						<img class="img-responsive" src="http://lorempixel.com/100/100/people/3">
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-xs-4">
-						<img class="img-responsive" src="http://lorempixel.com/100/100">
+						<img class="img-responsive" src="http://lorempixel.com/100/100/technics/1">
 					</div>
 					<div class="col-xs-4">
-						<img class="img-responsive" src="http://lorempixel.com/100/100">
+						<img class="img-responsive" src="http://lorempixel.com/100/100/technics/2">
 					</div>
 					<div class="col-xs-4">
-						<img class="img-responsive" src="http://lorempixel.com/100/100">
+						<img class="img-responsive" src="http://lorempixel.com/100/100/technics/3">
 					</div>
 				</div>
 				<p><i>View more photos</i></p>
