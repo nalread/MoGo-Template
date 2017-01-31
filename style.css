@@ -9,7 +9,12 @@
   justify-content: center; }
 
 .navbar-default .navbar-brand {
-  color: #fff; }
+  font-family: "Montserrat";
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.7em; }
+  .navbar-default .navbar-brand:hover {
+    color: #fce38a; }
 
 .navbar-default .navbar-nav .active a {
   background-color: inherit;
@@ -20,7 +25,9 @@
     color: #fce38a; }
 
 .navbar-default .navbar-nav li a {
-  color: #fff; }
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 0.8em; }
   .navbar-default .navbar-nav li a:hover {
     color: #fce38a; }
 
@@ -105,6 +112,10 @@ hr {
   margin: 10vh auto;
   display: flex;
   align-items: center; }
+  .numbers div {
+    border-left: 1px solid #fff; }
+    .numbers div:last-of-type {
+      border-right: 1px solid #fff; }
   .numbers h1, .numbers p {
     color: #fff; }
   .numbers h1 {
@@ -129,7 +140,8 @@ hr {
 .mockups-overlay {
   height: 100%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5vh 0; }
   .mockups-overlay > h4 {
     font-family: "Kaushan Script"; }
   .mockups-overlay > h3 {
