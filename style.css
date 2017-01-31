@@ -278,6 +278,23 @@ hr {
   #blog .glyphicon {
     color: #95e1d3; }
 
+.date {
+  background-color: #95e1d3;
+  color: #fff;
+  padding: 20px 0;
+  width: 70px;
+  position: absolute;
+  top: 35%;
+  left: -1vh; }
+  .date h5 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 2em;
+    margin: 0; }
+  .date h6 {
+    font-family: "Montserrat";
+    margin: 0; }
+
 .map {
   padding: 0;
   background-image: url(https://images.unsplash.com/photo-1444310689954-f041cfbe29f2);
