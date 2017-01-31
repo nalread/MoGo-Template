@@ -137,6 +137,9 @@ hr {
   .mockups-overlay hr {
     margin: 3vh auto; }
 
+.service {
+  padding-bottom: 5vh; }
+
 #opinions1 .fa {
   color: #95e1d3;
   font-size: 5em;
@@ -228,5 +231,62 @@ hr {
     color: #f38181; }
   .map-overlay h3 {
     color: #f38181; }
+
+.contact h2 {
+  font-family: "Montserrat";
+  color: #ccc;
+  font-weight: 700; }
+
+.contact .fa {
+  color: #95e1d3; }
+
+.contact h4, .contact small {
+  font-weight: 700; }
+
+.contact hr {
+  border-width: 1px;
+  border-color: #eee;
+  width: 100%; }
+
+.contact button {
+  border-radius: 0;
+  border: none;
+  background-color: #95e1d3;
+  font-weight: 700;
+  color: #fff; }
+
+.contact input {
+  border: 1px solid #eee;
+  border-radius: 0; }
+
+.contact p {
+  margin-bottom: 3vh; }
+
+.blogs h4 {
+  font-size: 1em;
+  font-weight: 600;
+  color: #666; }
+
+.blogs h5 {
+  color: #555;
+  font-weight: 600;
+  font-size: 0.8em; }
+
+.blogs p {
+  font-size: 0.8em; }
+
+.instagrams div {
+  padding: 1px;
+  margin: 0; }
+
+.instagrams .img-responsive {
+  width: 100%;
+  height: auto; }
+
+footer hr {
+  border-width: 1px;
+  border-color: #eee;
+  width: 100%;
+  max-width: 1200px; }
 
 /*# sourceMappingURL=style.css.map */
