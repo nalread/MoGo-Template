@@ -6,12 +6,11 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<script src="scripts.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<title>Mah Page</title>
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
-		<!-- //TODO /xfixed navbarx/, /xchange color on movex/, spyscroll, smoothscroll -->
+	<!-- //TODO: add smoothscroll -->
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
@@ -24,85 +23,155 @@
 				</div>
 				<div class="collapse navbar-collapse" id="mogo-navbar-collapse">
 					<ul class="nav navbar-nav navbar-right text-uppercase">
-						<li class="active"><a href="#about">About</a></li>
-						<li><a class="js-scroll-to-service" href="#service">Service</a></li>
-						<li><a href="#work">Work</a></li>
-						<li><a href="#blog">Blog</a></li>
-						<li><a href="#contact">Contact</a></li>
-						<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-						<li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+						<li class="active">
+							<a href="#about">About</a>
+						</li>
+						<li>
+							<a href="#service">Service</a>
+						</li>
+						<li>
+							<a href="#work">Work</a>
+						</li>
+						<li>
+							<a href="#blog">Blog</a>
+						</li>
+						<li>
+							<a href="#contact">Contact</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="glyphicon glyphicon-shopping-cart"></span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="glyphicon glyphicon-search"></span>
+							</a>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 		<div class="jumbotron text-center landing">
 			<div class="jumbotron-overlay">
-				<h2><i>Creative Template</i></h2>
-				<h1 class="text-uppercase">Welcome</h1>
-				<h1 class="text-uppercase">to mogo</h1>
+				<h2>
+					<i>Creative Template</i>
+				</h2>
+				<h1 class="text-uppercase">
+					Welcome
+				</h1>
+				<h1 class="text-uppercase">
+					to Mogo
+				</h1>
 				<hr>
 				<button type="button" class="btn btn-default text-uppercase">
 					Learn more
 				</button>
 				<div class="container text-left">
-					<div class="col-xs-3">
-						<a href="#"><h4 class="text-uppercase">01 <small>Intro</small></h4></a>
+					<div class="col-xs-12 col-md-3">
+						<a href="#">
+							<h4 class="text-uppercase">
+								01 <small>Intro</small>
+							</h4>
+						</a>
 					</div>
-					<div class="col-xs-3">
-						<a href="#"><h4 class="text-uppercase">02 <small>Work</small></h4></a>
+					<div class="col-xs-12 col-md-3">
+						<a href="#">
+							<h4 class="text-uppercase">
+								02 <small>Work</small>
+							</h4>
+						</a>
 					</div>
-					<div class="col-xs-3">
-						<a href="#"><h4 class="text-uppercase">03 <small>About</small></h4></a>
+					<div class="col-xs-12 col-md-3">
+						<a href="#">
+							<h4 class="text-uppercase">
+								03 <small>About</small>
+							</h4>
+						</a>
 					</div>
-					<div class="col-xs-3">
-						<a href="#"><h4 class="text-uppercase">04 <small>Contacts</small></h4></a>
+					<div class="col-xs-12 col-md-3">
+						<a href="#">
+							<h4 class="text-uppercase">
+								04 <small>Contacts</small>
+							</h4>
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="container text-center" id="about">
-			<h4><i>What we do</i></h4>
-			<h3 class="text-uppercase">Story about us</h3>
-			<!-- <hr> -->
+			<h4>
+				<i>What we do</i>
+			</h4>
+			<h3 class="text-uppercase">
+				Story about us
+			</h3>
+			<hr>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 			</p>
-			<!-- //TODO add hover: gradient, /xtranslatex/, icon, /xshadowx/ -->
-			<div class="col-xs-4">
-				<img class="img-responsive" src="http://photo.foter.com/photos/m/394/woman-working-on-laptop-with-notebook-and-mobile-phone-on-table.jpg">
-			</div>
-			<div class="col-xs-4">
-				<img class="img-responsive" src="http://photo.foter.com/photos/m/394/man-holding-digital-tablet-with-coffee-cup-and-mobile-phone-on-wooden-table.jpg">
-			</div>
-			<div class="col-xs-4">
-				<img class="img-responsive" src="http://photo.foter.com/photos/m/394/computer-with-landscape-on-screen-and-mobile-phone-on-wooden-table.jpg">
+			<!-- //TODO add hover: gradient, icon -->
+			<div class="row">
+				<div class="col-xs-12 col-md-4 image">
+					<img class="img-responsive" src="http://photo.foter.com/photos/m/394/woman-working-on-laptop-with-notebook-and-mobile-phone-on-table.jpg">
+				</div>
+				<div class="col-xs-12 col-md-4 image">
+					<img class="img-responsive" src="http://photo.foter.com/photos/m/394/man-holding-digital-tablet-with-coffee-cup-and-mobile-phone-on-wooden-table.jpg">
+				</div>
+				<div class="col-xs-12 col-md-4 image">
+					<img class="img-responsive" src="http://photo.foter.com/photos/m/394/computer-with-landscape-on-screen-and-mobile-phone-on-wooden-table.jpg">
+				</div>
 			</div>
 		</div>
 		<div class="container-fluid text-center numbers">
 			<div class="col-xs-2 col-xs-offset-1">
-				<h1>42</h1>
-				<p class="text-uppercase">Web Design projects</p>
+				<h1>
+					42
+				</h1>
+				<p class="text-uppercase">
+					Web Design projects
+				</p>
 			</div>
 			<div class="col-xs-2">
-				<h1>123</h1>
-				<p class="text-uppercase">Happy Client(s?)</p>
+				<h1>
+					123
+				</h1>
+				<p class="text-uppercase">
+					Happy Client(s?)
+				</p>
 			</div>
 			<div class="col-xs-2">
-				<h1>15</h1>
-				<p class="text-uppercase">Award Winner</p>
+				<h1>
+					15
+				</h1>
+				<p class="text-uppercase">
+					Award Winner
+				</p>
 			</div>
 			<div class="col-xs-2">
-				<h1>99</h1>
-				<p class="text-uppercase">Cup of Coffee</p>
+				<h1>
+					99
+				</h1>
+				<p class="text-uppercase">
+					Cup of Coffee
+				</p>
 			</div>
 			<div class="col-xs-2">
-				<h1>24</h1>
-				<p class="text-uppercase">Members</p>
+				<h1>
+					24
+				</h1>
+				<p class="text-uppercase">
+					Members
+				</p>
 			</div>
 		</div>
 		<div class="container text-center" id="services">
-			<h4><i>We work with</i></h4>
-			<h3 class="text-uppercase">Amazing Services</h3>
+			<h4>
+				<i>We work with</i>
+			</h4>
+			<h3 class="text-uppercase">
+				Amazing Services
+			</h3>
 			<hr>
 			<div class="row">
 				<div class="col-xs-4">
@@ -111,8 +180,11 @@
 							<span class="media-object glyphicon glyphicon-camera"></span>
 						</div>
 						<div class="media-body">
-							<h5 class="media-heading text-uppercase">Photography</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							<h5 class="media-heading text-uppercase">
+								Photography
+							</h5>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 							</p>
 						</div>
 					</div>
@@ -123,8 +195,11 @@
 							<span class="media-object glyphicon glyphicon-picture"></span>
 						</div>
 						<div class="media-body">
-							<h5 class="media-heading text-uppercase">Web Design</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							<h5 class="media-heading text-uppercase">
+								Web Design
+							</h5>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 							</p>
 						</div>
 					</div>
@@ -135,8 +210,11 @@
 							<span class="media-object glyphicon glyphicon-ok"></span>
 						</div>
 						<div class="media-body">
-							<h5 class="media-heading text-uppercase">Creativity</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							<h5 class="media-heading text-uppercase">
+								Creativity
+							</h5>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 							</p>
 						</div>
 					</div>
@@ -149,8 +227,11 @@
 							<span class="media-object glyphicon glyphicon-book"></span>
 						</div>
 						<div class="media-body">
-							<h5 class="media-heading text-uppercase">SEO</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							<h5 class="media-heading text-uppercase">
+								SEO
+							</h5>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 							</p>
 						</div>
 					</div>
@@ -161,8 +242,11 @@
 							<span class="media-object glyphicon glyphicon-home"></span>
 						</div>
 						<div class="media-body">
-							<h5 class="media-heading text-uppercase">Web Css/HTML</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							<h5 class="media-heading text-uppercase">
+								Web Css/HTML
+							</h5>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 							</p>
 						</div>
 					</div>
@@ -173,25 +257,36 @@
 							<span class="media-object glyphicon glyphicon-qrcode"></span>
 						</div>
 						<div class="media-body">
-							<h5 class="media-heading text-uppercase">Digital</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							<h5 class="media-heading text-uppercase">
+								Digital
+							</h5>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 							</p>
 						</div>
 					</div>
 				</div>
-			</div>		<!-- </row> -->
-		</div>		<!-- </container> -->
+			</div>
+		</div>
 		<div class="jumbotron text-center mockups">
 			<div class="mockups-overlay">
-				<h4><i>For all devices</i></h4>
-				<h3 class="text-uppercase">Unique Design</h3>
+				<h4>
+					<i>For all devices</i>
+				</h4>
+				<h3 class="text-uppercase">
+					Unique Design
+				</h3>
 				<hr>
 				<img class="img-responsive" src="http://i67.tinypic.com/2j4vw5h.png">
 			</div>
 		</div>
 		<div class="container text-center" id="service">
-			<h4><i>Service</i></h4>
-			<h3 class="text-uppercase">What we do</h3>
+			<h4>
+				<i>Service</i>
+			</h4>
+			<h3 class="text-uppercase">
+				What we do
+			</h3>
 			<hr>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -199,24 +294,23 @@
 			</p>
 		</div>
 		<div class="container service">
-			<div class="col-xs-6">
-				<!-- //TODO: /xchange imagex/ -->
+			<div class="col-xs-12 col-md-6">
 				<img class="img-responsive" src="http://photo.foter.com/photos/m/54/focused-5.jpg">
 			</div>
-			<div class="col-xs-6">
-				<!-- //TODO: /xaccordionx/ -->
+			<div class="col-xs-12 col-md-6">
 				<div class="panel-group" id="accordion" role="tablist">
 				  <div class="panel panel-default">
 				    <div class="panel-heading" role="tab" id="headingOne">
 				      <h4 class="panel-title">
 				        <a class="text-uppercase" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-				          <span class="glyphicon glyphicon-picture"></span>Photography
+				          <span class="glyphicon glyphicon-picture"></span>
+					          Photography
 				        </a>
 				      </h4>
 				    </div>
 				    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel">
 				      <div class="panel-body">
-				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				    	Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 				      </div>
 				    </div>
 				  </div>
@@ -224,13 +318,14 @@
 				    <div class="panel-heading" role="tab" id="headingTwo">
 				      <h4 class="panel-title">
 				        <a class="collapsed text-uppercase" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-				          <span class="fa fa-sliders"></span> Creativity
+				          <span class="fa fa-sliders"></span>
+				           Creativity
 				        </a>
 				      </h4>
 				    </div>
 				    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel">
 				      <div class="panel-body">
-				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				    	Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 				      </div>
 				    </div>
 				  </div>
@@ -238,13 +333,14 @@
 				    <div class="panel-heading" role="tab" id="headingThree">
 				      <h4 class="panel-title">
 				        <a class="collapsed text-uppercase" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-				          <span class="glyphicon glyphicon-record"></span> Web design
+				          <span class="glyphicon glyphicon-record"></span>
+				           Web design
 				        </a>
 				      </h4>
 				    </div>
 				    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel">
 				      <div class="panel-body">
-				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				    	Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 				      </div>
 				    </div>
 				  </div>
@@ -252,7 +348,6 @@
 			</div>
 		</div>
 		<div class="jumbotron" id="opinions1">
-			<!-- //TODO: carousel -->
 			<div id="carousel1" class="carousel slide" data-ride="carousel">
 			<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox">
@@ -273,7 +368,9 @@
 									</i>
 								</p>
 								<hr class="pull-left">
-								<h5 class="media-heading pull-left"><i>Joshua Earle</i></h5>
+								<h5 class="media-heading pull-left">
+									<i>Joshua Earle</i>
+								</h5>
 							</div>
 						</div>
 					</div> <!-- /item -->
@@ -294,70 +391,93 @@
 								</i>
 							</p>
 							<hr class="pull-left">
-							<h5 class="media-heading pull-left"><i>Joshua Earle</i></h5>
+							<h5 class="media-heading pull-left">
+								<i>Joshua Earle</i>
+							</h5>
 						</div>
 					</div>
 				</div>
 			</div>
-			
-			<!-- Controls -->
-			<a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left"></span>
-			</a>
-			<a class="right carousel-control" href="#carousel1" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right"></span>
-			</a>
-		</div>
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="right carousel-control" href="#carousel1" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
 		</div>		<!-- </jumbotron> -->
 		<div class="container text-center team">
 		<!-- //TODO add hover: gradient, translate, icon, shadow -->
-			<h4><i>Who we are</i></h4>
-			<h3 class="text-uppercase">Meet our team</h3>
+			<h4>
+				<i>Who we are</i>
+			</h4>
+			<h3 class="text-uppercase">
+				Meet our team
+			</h3>
 			<hr>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco.
 			</p>
-			<div class="col-xs-4">
+			<div class="col-xs-12 col-md-4">
 				<img class="img-responsive" src="https://static.pexels.com/photos/50855/pexels-photo-50855.jpeg">
-				<h5 class="text-uppercase">Matthew Dix</h5>
-				<h6><i>Graphic Design</i></h6>
+				<h5 class="text-uppercase">
+					Matthew Dix
+				</h5>
+				<h6>
+					<i>Graphic Design</i>
+				</h6>
 			</div>
-			<div class="col-xs-4">
+			<div class="col-xs-12 col-md-4">
 				<img class="img-responsive" src="https://static.pexels.com/photos/17597/pexels-photo.jpg">
-				<h5 class="text-uppercase">Christopher Campbell</h5>
-				<h6><i>Branding/UX design</i></h6>
+				<h5 class="text-uppercase">
+					Christopher Campbell
+				</h5>
+				<h6>
+					<i>Branding/UX design</i>
+				</h6>
 			</div>
-			<div class="col-xs-4">
+			<div class="col-xs-12 col-md-4">
 				<img class="img-responsive" src="https://static.pexels.com/photos/76504/pexels-photo-76504.jpeg">
-				<h5 class="text-uppercase">Michael Fertig</h5>
-				<h6><i>Developer</i></h6>
+				<h5 class="text-uppercase">
+					Michael Fertig
+				</h5>
+				<h6>
+					<i>Developer</i>
+				</h6>
 			</div>
 		</div>
 		<div class="jumbotron container-fluid">
-			<div class="col-xs-2">
-				<img class="img-responsive" src="http://i67.tinypic.com/2mri6ue.png">
-			</div>
-			<div class="col-xs-2">
-				<img class="img-responsive" src="http://i66.tinypic.com/ohtxza.jpg">
-			</div>
-			<div class="col-xs-2">
-				<img class="img-responsive" src="http://i63.tinypic.com/14m9qb7.png">
-			</div>
-			<div class="col-xs-2">
-				<img class="img-responsive" src="http://i67.tinypic.com/16090ty.png">
-			</div>
-			<div class="col-xs-2">
-				<img class="img-responsive" src="http://i67.tinypic.com/fege9u.png">
-			</div>
-			<div class="col-xs-2">
-				<img class="img-responsive" src="http://i68.tinypic.com/2uhtg5h.png">
+			<div class="container">
+				<div class="col-xs-4 col-md-2">
+					<img class="img-responsive" src="http://i67.tinypic.com/2mri6ue.png">
+				</div>
+				<div class="col-xs-4 col-md-2">
+					<img class="img-responsive" src="http://i66.tinypic.com/ohtxza.jpg">
+				</div>
+				<div class="col-xs-4 col-md-2">
+					<img class="img-responsive" src="http://i63.tinypic.com/14m9qb7.png">
+				</div>
+				<div class="col-xs-4 col-md-2">
+					<img class="img-responsive" src="http://i67.tinypic.com/16090ty.png">
+				</div>
+				<div class="col-xs-4 col-md-2">
+					<img class="img-responsive" src="http://i67.tinypic.com/fege9u.png">
+				</div>
+				<div class="col-xs-4 col-md-2">
+					<img class="img-responsive" src="http://i68.tinypic.com/2uhtg5h.png">
+				</div>
 			</div>
 		</div>
 		<div class="container text-center" id="work">
-			<h4><i>What we do</i></h4>
-			<h3 class="text-uppercase">Some of our work</h3>
+			<h4>
+				<i>What we do</i>
+			</h4>
+			<h3 class="text-uppercase">
+				Some of our work
+			</h3>
 			<hr>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -367,7 +487,7 @@
 		</div>
 		<div class="container-fluid gallery">
 		<!-- //TODO add hover: gradient, icon, text -->
-			<div class="col-xs-3">
+			<div class="col-xs-12 col-md-3">
 				<div class="row">
 					<img class="img-responsive" src="https://images.unsplash.com/photo-1482555556731-04fd7eb4d24d">
 				</div>
@@ -375,7 +495,7 @@
 					<img class="img-responsive" src="https://images.unsplash.com/photo-1480258350533-dee0cede28e1">
 				</div>
 			</div>
-			<div class="col-xs-3">
+			<div class="col-xs-12 col-md-3">
 				<div class="row">
 					<img class="img-responsive" src="https://images.unsplash.com/photo-1471624257787-362e0c864ab2">
 				</div>
@@ -383,12 +503,12 @@
 					<img class="img-responsive" src="https://images.unsplash.com/photo-1476648411502-c46db3bd5357">
 				</div>
 			</div>
-			<div class="col-xs-3">
+			<div class="col-xs-12 col-md-3">
 				<div class="row">
 					<img class="img-responsive" src="https://images.unsplash.com/photo-1477342620885-10e8a3790e30">
 				</div>
 			</div>
-			<div class="col-xs-3">
+			<div class="col-xs-12 col-md-3">
 				<div class="row">
 					<img class="img-responsive" src="https://images.unsplash.com/photo-1467071114456-dddb1d7b4842">
 				</div>
@@ -418,7 +538,9 @@
 									</i>
 								</p>
 								<hr class="pull-left">
-								<h5 class="media-heading pull-left"><i>Joshua Earle</i></h5>
+								<h5 class="media-heading pull-left">
+									<i>Joshua Earle</i>
+								</h5>
 							</div>
 						</div>
 					</div> <!-- /item -->
@@ -439,7 +561,9 @@
 								</i>
 							</p>
 							<hr class="pull-left">
-							<h5 class="media-heading pull-left"><i>Joshua Earle</i></h5>
+							<h5 class="media-heading pull-left">
+								<i>Joshua Earle</i>
+							</h5>
 						</div>
 					</div>
 				</div>
@@ -456,19 +580,26 @@
 		</div>
 		<div class="jumbotron container-fluid text-center" id="opinions3">
 			<div class="opinions3-overlay">
-				<!-- //TODO: /xchange 'client' picturesx/ -->
-				<h4><i>Happy Clients</i></h4>
-				<h3 class="text-uppercase">What people say</h3>
+				<h4>
+					<i>Happy Clients</i>
+				</h4>
+				<h3 class="text-uppercase">
+					What people say
+				</h3>
 				<hr>
 				<div class="row">
-					<div class="col-xs-4 col-xs-offset-2">
+					<div class="col-xs-12 col-md-4 col-md-offset-2">
 						<div class="media">
 							<div class="media-left">
 								<img class="img-circle media-object" src="http://photo.foter.com/photos/m/398/philippe-5.jpg">
 							</div>
 							<div class="media-body text-left">
-								<h5 class="media-heading text-uppercase">Matthew Dix</h5>
-								<h6><i>Graphic Design</i></h6>
+								<h5 class="media-heading text-uppercase">
+									Matthew Dix
+								</h5>
+								<h6>
+									<i>Graphic Design</i>
+								</h6>
 								<hr>
 								<p>
 									<small>
@@ -479,14 +610,18 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-xs-4">
+					<div class="col-xs-12 col-md-4">
 						<div class="media">
 							<div class="media-left">
 								<img class="img-circle media-object" src="http://photo.foter.com/photos/m/398/hello-old-friend.jpg">
 							</div>
 							<div class="media-body text-left">
-								<h5 class="media-heading text-uppercase">Nick Karvounis</h5>
-								<h6><i>Graphic Design</i></h6>
+								<h5 class="media-heading text-uppercase">
+									Nick Karvounis
+								</h5>
+								<h6>
+									<i>Graphic Design</i>
+								</h6>
 								<hr>
 								<p>
 									<small>
@@ -499,14 +634,18 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-4 col-xs-offset-2">
+					<div class="col-xs-12 col-md-4 col-md-offset-2">
 						<div class="media">
 							<div class="media-left">
 								<img class="img-circle media-object" src="http://photo.foter.com/photos/m/398/christian-medell-n-medell-ncity-igerscolombia-retrato-instamedell-n.jpg">
 							</div>
 							<div class="media-body text-left">
-								<h5 class="media-heading text-uppercase">Jaelynn Castillo</h5>
-								<h6><i>Graphic Design</i></h6>
+								<h5 class="media-heading text-uppercase">
+									Jaelynn Castillo
+								</h5>
+								<h6>
+									<i>Graphic Design</i>
+								</h6>
 								<hr>
 								<p>
 									<small>
@@ -517,14 +656,18 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-xs-4">
+					<div class="col-xs-12 col-md-4">
 						<div class="media">
 							<div class="media-left">
 								<img class="img-circle media-object" src="http://photo.foter.com/photos/m/398/mi-ltima-sesi-n-fotogr-fica.jpg">
 							</div>
 							<div class="media-body text-left">
-								<h5 class="media-heading text-uppercase">Mike Petrucci</h5>
-								<h6><i>Graphic Design</i></h6>
+								<h5 class="media-heading text-uppercase">
+									Mike Petrucci
+								</h5>
+								<h6>
+									<i>Graphic Design</i>
+								</h6>
 								<hr>
 								<p>
 									<small>
@@ -539,73 +682,115 @@
 			</div>
 		</div>
 		<div class="container text-center" id="blog">
-			<!-- //TODO: add label in lower left corner of images, /xchange imagesx/, /xmixup statisticsx/ -->
-			<h4><i>Our stories</i></h4>
-			<h3 class="text-uppercase">Latest blog</h3>
+			<!-- //TODO: add label in lower left corner of images -->
+			<h4>
+				<i>Our stories</i>
+			</h4>
+			<h3 class="text-uppercase">
+				Latest blog
+			</h3>
 			<hr>
-			<div class="col-xs-4 text-left">
+			<div class="col-xs-12 col-md-4 text-left">
 				<img class="img-responsive" src="http://photo.foter.com/photos/m/394/young-woman-in-eyeglasses-working-on-laptop.jpg">
-				<h6 class="text-uppercase">Lorem ipsum dolor sit amet</h6>
+				<h6 class="text-uppercase">
+					Lorem ipsum dolor sit amet
+				</h6>
 				<p>
 					Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat.
 				</p>
 				<hr>
-				<span class="glyphicon glyphicon-eye-open"></span><span> 542 </span><span class="glyphicon glyphicon-comment"></span> 17
+				<span class="glyphicon glyphicon-eye-open"></span>
+				<span> 542 </span>
+				<span class="glyphicon glyphicon-comment"></span>
+				<span> 17</span>
 			</div>
-			<div class="col-xs-4 text-left">
+			<div class="col-xs-12 col-md-4 text-left">
 				<img class="img-responsive" src="http://photo.foter.com/photos/m/394/coffee-percolator-mobile-phone-and-laptop-on-table.jpg">
-				<h6 class="text-uppercase">Lorem ipsum dolor sit amet</h6>
+				<h6 class="text-uppercase">
+					Lorem ipsum dolor sit amet
+				</h6>
 				<p>
 					Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat.
 				</p>
 				<hr>
-				<span class="glyphicon glyphicon-eye-open"></span><span> 338 </span><span class="glyphicon glyphicon-comment"></span><span> 9</span>
+				<span class="glyphicon glyphicon-eye-open"></span>
+				<span> 338 </span>
+				<span class="glyphicon glyphicon-comment"></span>
+				<span> 9</span>
 			</div>
-			<div class="col-xs-4 text-left">
+			<div class="col-xs-12 col-md-4 text-left">
 				<img class="img-responsive" src="http://photo.foter.com/photos/m/224/nec-conference-35.jpg">
-				<h6 class="text-uppercase">Lorem ipsum dolor sit amet</h6>
+				<h6 class="text-uppercase">
+					Lorem ipsum dolor sit amet
+				</h6>
 				<p>
 					Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat.
 				</p>
 				<hr>
-				<span class="glyphicon glyphicon-eye-open"></span><span> 666 </span><span class="glyphicon glyphicon-comment"></span><span> 69</span>
+				<span class="glyphicon glyphicon-eye-open"></span>
+				<span> 666 </span>
+				<span class="glyphicon glyphicon-comment"></span>
+				<span> 69</span>
 			</div>
 		</div>
 		<div class="jumbotron map">
 			<div class="container text-center map-overlay">
 				<span class="glyphicon glyphicon-map-marker"></span>
-				<h3 class="text-uppercase">Open map</h3>
+				<h3 class="text-uppercase">
+					Open map
+				</h3>
 				<hr>
 			</div>
 		</div>
 		<div class="container" id="contact">
-			<div class="col-xs-4">
-				<h2>MoGo</h2>
+			<div class="col-xs-12 col-md-4">
+				<h2>
+					MoGo
+				</h2>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat.
 				</p>
-				<h4>15k <small>followers</small></h4>
+				<h4>
+					15k <small>followers</small>
+				</h4>
 				<hr>
-				<p><small><i>Follow Us: </i></small><i class="fa fa-facebook"></i> <i class="fa fa-twitter"></i> <i class="fa fa-instagram"></i> <i class="fa fa-pinterest"></i> <i class="fa fa-google-plus"></i> <i class="fa fa-youtube"></i> <i class="fa fa-dribbble"></i> <i class="fa fa-tumblr"></i></p>
+				<p>
+					<small>
+						<i>Follow Us: </i>
+					</small>
+					<i class="fa fa-facebook"></i>
+					<i class="fa fa-twitter"></i>
+					<i class="fa fa-instagram"></i>
+					<i class="fa fa-pinterest"></i>
+					<i class="fa fa-google-plus"></i>
+					<i class="fa fa-youtube"></i>
+					<i class="fa fa-dribbble"></i>
+					<i class="fa fa-tumblr"></i>
+				</p>
 				<form>
 					<div class="input-group">
 						<input type="email" name="email" class="form-control" placeholder="Your Email...">
-						<span class="input-group-btn"><button type="button" class="btn btn-default text-uppercase">Subscribe</button></span>
+						<span class="input-group-btn">
+							<button type="button" class="btn btn-default text-uppercase">
+								Subscribe
+							</button>
+						</span>
 					</div>
 				</form>
 			</div>
-			<div class="col-xs-4 blogs">
-				<!-- //TODO: /xchange picturesx/ -->
-				<h4 class="text-uppercase">Blogs</h4>
+			<div class="col-xs-12 col-md-4 blogs">
+				<h4 class="text-uppercase">
+					Blogs
+				</h4>
 				<div class="media">
 					<div class="media-left">
 						<img class="media-object" src="http://photo.foter.com/photos/m/398/random-abandonment.jpg">
@@ -614,7 +799,9 @@
 						<h5 class="media-heading text-uppercase">
 							Lorem Ipsum dolor sit amet, consectetur adipiscing
 						</h5>
-						<p>Jan 9, 2016</p>
+						<p>
+							Jan 9, 2016
+						</p>
 					</div>
 				</div>
 				<div class="media">
@@ -625,7 +812,9 @@
 						<h5 class="media-heading text-uppercase">
 							Lorem Ipsum dolor sit amet, consectetur adipiscing
 						</h5>
-						<p>Jan 9, 2016</p>
+						<p>
+							Jan 9, 2016
+						</p>
 					</div>
 				</div>
 				<div class="media">
@@ -636,13 +825,14 @@
 						<h5 class="media-heading text-uppercase">
 							Lorem Ipsum dolor sit amet, consectetur adipiscing
 						</h5>
-						<p>Jan 9, 2016</p>
+						<p>
+							Jan 9, 2016
+						</p>
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-4 instagrams">
+			<div class="col-xs-12 col-md-4 instagrams">
 				<h4 class="text-uppercase">Instagram</h4>
-				<!-- //TODO: /xchange picturesx/ -->
 				<div class="row">
 					<div class="col-xs-4">
 						<img class="img-responsive" src="http://lorempixel.com/100/100/abstract/1">
@@ -676,7 +866,9 @@
 						<img class="img-responsive" src="http://lorempixel.com/100/100/technics/3">
 					</div>
 				</div>
-				<p><i>View more photos</i></p>
+				<p>
+					<i>View more photos</i>
+				</p>
 			</div>
 		</div>
 		<footer class="text-center">
