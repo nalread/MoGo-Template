@@ -119,9 +119,9 @@ hr {
   display: flex;
   align-items: center; }
   .numbers div {
-    border-left: 1px solid #fff; }
+    border-left: 1px solid #BFEDE5; }
     .numbers div:last-of-type {
-      border-right: 1px solid #fff; }
+      border-right: 1px solid #BFEDE5; }
   .numbers h1, .numbers p {
     color: #fff; }
   .numbers h1 {
@@ -147,7 +147,7 @@ hr {
   height: 100%;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 5vh 0; }
+  padding-top: 5vh; }
   .mockups-overlay > h4 {
     font-family: "Kaushan Script"; }
   .mockups-overlay > h3 {
@@ -156,7 +156,7 @@ hr {
     margin: 3vh auto; }
   .mockups-overlay img {
     max-height: 500px;
-    margin: -50px auto -100px; }
+    margin: 0 auto; }
 
 .service {
   padding-bottom: 5vh; }
@@ -177,6 +177,9 @@ hr {
       width: 3px; }
     .service .panel-body::-webkit-scrollbar-thumb {
       background-color: #95e1d3; }
+
+#opinions1 .item {
+  max-width: 900px; }
 
 #opinions1 .fa {
   color: #95e1d3;
@@ -214,6 +217,8 @@ hr {
 
 #opinions2 {
   margin-bottom: 5vh; }
+  #opinions2 .item {
+    max-width: 800px; }
   #opinions2 p {
     margin-bottom: 2vh; }
   #opinions2 hr {
@@ -269,8 +274,8 @@ hr {
 .date {
   background-color: #95e1d3;
   color: #fff;
-  padding: 15px 0;
-  width: 70px;
+  padding: 10px 0;
+  width: 50px;
   position: absolute;
   top: 35%;
   left: -1vh; }
@@ -305,7 +310,8 @@ hr {
   font-weight: 700; }
 
 #contact .fa {
-  color: #95e1d3; }
+  color: #95e1d3;
+  margin-left: 5px; }
 
 #contact h4, #contact small {
   font-weight: 700; }
@@ -328,6 +334,9 @@ hr {
 
 #contact p {
   margin-bottom: 3vh; }
+
+#contact small {
+  margin-right: 20px; }
 
 .blogs h4 {
   font-size: 1em;
@@ -353,17 +362,18 @@ hr {
   width: 200px;
   height: auto; }
 
-footer hr {
-  border-width: 1px;
-  border-color: #eee;
-  width: 100%;
-  max-width: 1200px; }
-
-footer a {
-  color: #f38181; }
-  footer a:hover {
-    color: #f38181;
-    text-decoration: none;
-    border-bottom: solid 2px; }
+footer {
+  margin-bottom: 2vh; }
+  footer hr {
+    border-width: 1px;
+    border-color: #eee;
+    width: 100%;
+    max-width: 1200px; }
+  footer a {
+    color: #f38181; }
+    footer a:hover {
+      color: #f38181;
+      text-decoration: none;
+      border-bottom: solid 2px; }
 
 /*# sourceMappingURL=style.css.map */
