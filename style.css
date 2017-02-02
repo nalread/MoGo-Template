@@ -105,7 +105,8 @@ hr {
   margin-bottom: 7vh; }
 
 #about {
-  margin: 1vh auto; }
+  margin: -50px auto 1vh;
+  padding-top: 50px; }
   #about img {
     margin-bottom: 5%; }
     #about img:hover {
@@ -157,6 +158,10 @@ hr {
   .mockups-overlay img {
     max-height: 500px;
     margin: 0 auto; }
+
+#service {
+  margin-top: -50px;
+  padding-top: 50px; }
 
 .service {
   padding-bottom: 5vh; }
@@ -212,6 +217,10 @@ hr {
     transform: translate(-10px, -10px);
     box-shadow: 10px 10px #95e1d3; }
 
+#work {
+  margin-top: -50px;
+  padding-top: 50px; }
+
 .gallery {
   margin-bottom: 5vh; }
 
@@ -261,6 +270,8 @@ hr {
     max-height: 100px; }
 
 #blog {
+  margin-top: -50px;
+  padding-top: 50px;
   margin-bottom: 5vh; }
   #blog div hr {
     border: solid 1px #eee;
