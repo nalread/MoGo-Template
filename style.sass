@@ -8,6 +8,7 @@
 $mogo-yellow: #fce38a
 $mogo-red: #f38181
 $mogo-cyan: #95e1d3
+$mogo-cyan-light: #BFEDE5
 
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat|Roboto')
 
@@ -87,7 +88,7 @@ body
 	h1
 		font-family: "Montserrat"
 		color: #fff
-		margin: 0 0 -10vh 0
+		margin: 0 0 -5vh 0
 
 	h4
 		color: #fff
@@ -133,25 +134,12 @@ hr
 
 #about
 	margin: 1vh auto
-	.image
 	img
-		position: relative
-		max-width: 300px
-		&:after
-			content: ""
-			position: absolute
-			width: 100%
-			height: 100%
-			top: 0
-			left: 0
-			background: rgba(0,0,0,0.6)
-			opacity: 0
+		margin-bottom: 5%
 		&:hover
 			transition: 0.5s
 			transform: translate(-5px, -5px)
 			box-shadow: 5px 5px $mogo-cyan
-		&:after:hover
-			opacity: 1
 
 .numbers
 	background-color: $mogo-cyan
@@ -160,10 +148,10 @@ hr
 	align-items: center
 
 	div
-		border-left: 1px solid #fff
+		border-left: 1px solid $mogo-cyan-light
 
 		&:last-of-type
-			border-right: 1px solid #fff
+			border-right: 1px solid $mogo-cyan-light
 
 	h1, p
 		color: #fff
@@ -194,7 +182,7 @@ hr
 	height: 100%
 	width: 100%
 	background-color: rgba(255, 255, 255, 0.8)
-	padding: 5vh 0
+	padding-top: 5vh
 
 	&>h4
 		font-family: "Kaushan Script"
@@ -207,7 +195,7 @@ hr
 
 	img
 		max-height: 500px
-		margin: -50px auto -100px
+		margin: 0 auto
 
 .service
 	padding-bottom: 5vh
@@ -230,6 +218,8 @@ hr
 			background-color: $mogo-cyan
 
 #opinions1
+	.item
+		max-width: 900px
 	.fa
 		color: $mogo-cyan
 		font-size: 5em
@@ -267,6 +257,8 @@ hr
 	margin-bottom: 5vh
 
 #opinions2
+	.item
+		max-width: 800px
 	p
 		margin-bottom: 2vh
 	hr
@@ -328,8 +320,8 @@ hr
 .date
 	background-color: $mogo-cyan
 	color: #fff
-	padding: 20px 0
-	width: 70px
+	padding: 10px 0
+	width: 50px
 	position: absolute
 	top: 35%
 	left: -1vh
@@ -367,6 +359,7 @@ hr
 		font-weight: 700
 	.fa
 		color: $mogo-cyan
+		margin-left: 5px
 	h4, small
 		font-weight: 700
 	hr
@@ -384,6 +377,8 @@ hr
 		border-radius: 0
 	p
 		margin-bottom: 3vh
+	small
+		margin-right: 20px
 
 .blogs
 	h4
@@ -401,12 +396,13 @@ hr
 		max-width: 10vw
 .instagrams
 	div
-		padding: 1px
+		padding: 0 1px 1px 1px
 		margin: 0
 	.img-responsive
 		width: 200px
 		height: auto
 footer
+	margin-bottom: 2vh
 	hr
 		border-width: 1px
 		border-color: #eee
